@@ -1,0 +1,56 @@
+#home{
+    display: flex;
+    height: 90vh;
+    margin: auto;
+    font-family: 'Poppins';
+    text-align: center;
+}
+
+#home h1{
+    font-weight: 700;
+    font-size:1rem;
+    color: #f1f1f1;
+}
+#home p {
+    font-size: .61rem;
+    color: #f1f1f1;
+}
+
+.home_text_container{
+    height: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.home_text_container_separation{
+    margin-top: 25px;
+}
+
+
+
+ /* Small devices (portrait tablets and large phones, 600px and up) */
+ @media only screen and (min-width: 600px) {
+
+ }
+
+ /* Medium devices (landscape tablets, 768px and up) */
+ @media only screen and (min-width: 768px) {
+    #home h1{
+        font-size: 1.2rem;
+    }
+    #home p{
+        font-size: .7rem;
+    }
+ }
+
+ /* Large devices (laptops/desktops, 992px and up) */
+ @media only screen and (min-width: 992px) {
+
+ }
+
+ /* Extra large devices (large laptops and desktops, 1200px and up) */
+ @media only screen and (min-width: 1200px) {
+
+ }
