@@ -15,4 +15,11 @@ body{
 main{
     width: 90%;
     margin: auto;
+    font-family: 'Poppins';
+    color: white;
+}
+
+.textViolet{
+    font-family: 'Playfair Display', serif;
+    color: #BC78FF;
 }

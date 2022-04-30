@@ -1,0 +1,88 @@
+#about{
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#about
+h1{
+    font-size: 1rem;
+}
+#about
+p{
+    font-size: .61rem;
+}
+
+.about_container_preferences{
+    margin-top: 15px;
+}
+
+/* Button get resume */
+
+#about
+button{
+    height: 50px;
+   // width: 250px;
+    font-size: .7rem;
+    background-color: inherit;
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 999px;
+}
+
+#about
+button:hover{
+    color: #fff;
+    border: 1px solid #BC78FF;
+    background-color: #BC78FF;
+    transition: all .2s ease-in;
+    cursor: pointer;
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 300px) {
+    #about
+    button{
+        width: 180px;
+    }
+}
+
+@media only screen and (min-width: 300px) {
+    #about
+    button{
+        width: 260px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #about
+    button{
+        width: 260px;
+    }
+}
+
+
+@media only screen and (min-width: 992px) {
+    #about
+    h1{
+        font-size: 1.5rem;
+    }
+
+    #about
+    p{
+        font-size: .7rem;
+    }
+
+    #about
+    button{
+        width: 360px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+
+}

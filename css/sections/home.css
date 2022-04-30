@@ -47,10 +47,20 @@
 
  /* Large devices (laptops/desktops, 992px and up) */
  @media only screen and (min-width: 992px) {
-
+    #home h1{
+        font-size: 1.3rem;
+    }
+    #home p{
+        font-size: .7rem;
+    }
  }
 
  /* Extra large devices (large laptops and desktops, 1200px and up) */
  @media only screen and (min-width: 1200px) {
-
+    #home h1{
+        font-size: 1.5rem;
+    }
+    #home p{
+        font-size: .8rem;
+    }
  }
