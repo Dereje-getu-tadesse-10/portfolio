@@ -1,5 +1,6 @@
 header{
     position: fixed;
+    top:0;
     left: 50%;
     transform: translateX(-50%);
     /* width: 90%; */
@@ -8,6 +9,7 @@ header{
     align-items: center;
     font-family: 'Poppins';
     z-index: 199;
+    height: 90px;
 }
 
 /* Logo width */
@@ -28,7 +30,6 @@ header{
     background-color: inherit;
     cursor:pointer;
     z-index: 99;
-    border-radius: 5px;
     margin-top: 20px;
 }
 
@@ -70,17 +71,17 @@ a{
 /* Home */
 
 #home{
-    height: 75vh;
-    padding: 1px;
-    font-size: 1rem;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    font-size: .7rem;
 }
 
-#home h1{
-    margin-top: 150px;
-}
-
-#home
+.presentation
 p{
-    margin-top: 20px;
-    font-size: .6rem;
+    margin-top: 15px;
+    font-size: .7rem;
 }

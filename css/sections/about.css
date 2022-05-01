@@ -1,7 +1,9 @@
 #about{
     height: 100vh;
+    padding: 1px;
 }
 
+/* Container line a propos de moi */
 
 .line-container{
     width: 260px;
@@ -12,12 +14,10 @@
 }
 .line-container
 p{
-    width:200px;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #ffffff;
-    border-radius: 5px;
     background-color: #F4A49E;
 }
 
@@ -29,13 +29,15 @@ p{
     background-color: #fff;
 }
 
+/* Container paragrahe + illustration */
+
+
 .illustration_pagraphe{
     height: 90%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    margin: auto;
 }
 
 #poulet{
@@ -46,19 +48,29 @@ p{
     font-size: .6rem;
 }
 
-
-@media only screen and (min-width: 768px){
-    .paragrapheContainer{
-        flex-direction: row;
-    }
-}
-
 .preference{
-    margin-top: 55px;
+    margin-top: 15px;
 }
+
+
+
+
+/* Style button */
 
 #about
 button{
+    height: 50px;
+    width: 190px;
+    border: 2px solid #d88875;
+    background-color: inherit;
+    color: #ffffff;
+    font-size: .6rem;
+    cursor:pointer;
+}
 
+#about
+button:hover{
+    background-color: #d88875;
+    transition: all .2s ease-in-out;
 }
 
