@@ -6,27 +6,37 @@
 
 .projectImageTechno{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
     margin: auto;
+    width:85%;
+
 }
+
 
 .projectImage{
-    width: 100%;
+    margin: auto;
+    width:100%;
 }
 
-
-/* #modale{
+#modale{
     position:absolute;
     top:0;
     left:0;
     height: 100vh;
+    width: 100%;
+    z-index: 99;
+    display: none;
     background-color: #32324C;
 }
 #close-btn{
     position: absolute;
     top: 0;
     right: 0;
-    width: 10px;
+    width: 40px;
     cursor:pointer;
-} */
+}
+
+.openModale{
+    width: 150px;
+    margin: 15px auto;
+}

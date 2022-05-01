@@ -1,32 +1,11 @@
 #about{
-    height: 100vh;
+    height: 110vh;
     padding: 1px;
 }
 
-/* Container line a propos de moi */
 
-.line-container{
-    width: 260px;
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-    font-size: .7rem;
-}
-.line-container
-p{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #ffffff;
-    background-color: #F4A49E;
-}
-
-.line-container
-.line{
-    display: block;
-    height: 4px;
-    width: 50px;
-    background-color: #fff;
+h6{
+    font-size:2rem;
 }
 
 /* Container paragrahe + illustration */
@@ -35,7 +14,7 @@ p{
 .illustration_pagraphe{
     height: 90%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
 }
@@ -45,15 +24,14 @@ p{
 }
 
 .paragraphe{
-    font-size: .6rem;
+    font-size: 1rem;
+    height: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding: 2px;
+
 }
-
-.preference{
-    margin-top: 15px;
-}
-
-
-
 
 /* Style button */
 
@@ -64,7 +42,7 @@ button{
     border: 2px solid #d88875;
     background-color: inherit;
     color: #ffffff;
-    font-size: .6rem;
+    font-size: 1.2rem;
     cursor:pointer;
 }
 
