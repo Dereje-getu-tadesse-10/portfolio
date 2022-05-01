@@ -9,17 +9,18 @@
 html,
 body{
     font-size: 2rem;
-    background: #121212;
+    background-color: #1A1A40;
 }
 
 main{
     width: 90%;
-    margin: auto;
+    margin:  auto;
     font-family: 'Poppins';
     color: white;
 }
 
-.textViolet{
-    font-family: 'Playfair Display', serif;
-    color: #BC78FF;
+
+.colorText{
+    color: #F4A49E;
+    font-weight: bold;
 }

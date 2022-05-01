@@ -1,0 +1,114 @@
+#projects
+h1{
+    font-size: 1rem;
+    text-align: center;
+}
+#flex_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Left Section */
+
+#flex_container
+#left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+/* #flex_container
+#left
+img{
+    width: 100%;
+} */
+
+#left
+.overlay_projects{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    /* background-color: red; */
+}
+#left
+.overlay_projects
+ul{
+    position: inherit;
+    left: 5px;
+    bottom: 5px;
+}
+
+.overlay_projects
+ul
+li{
+    font-size: .5rem;
+}
+
+/* Right Section */
+
+#flex_container
+#right{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#flex_container
+#right
+h2{
+    font-size: 1rem;
+}
+
+#flex_container
+#right
+p{
+    font-size: .7rem;
+}
+
+#right
+.text_separation{
+    margin-top: 30px;
+}
+
+#right
+.linkProjects{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    height: 40px;
+    border: none;
+    font-size: .5rem;
+    /* background-color: red;; */
+}
+
+#right
+.linkProjects:hover{
+    background-color:red
+}
+
+@media only screen and (min-width:768px){
+    #flex_container{
+        flex-direction: row;
+    }
+    #left{
+        width: 50%;
+    }
+
+    #left
+    img{
+        width: 50%;
+    }
+
+    #right{
+        width: 50%;
+    }
+}

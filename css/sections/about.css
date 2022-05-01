@@ -1,87 +1,64 @@
 #about{
     height: 100vh;
+}
+
+
+.line-container{
+    width: 260px;
     display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
+    justify-content:space-between;
     align-items: center;
-    text-align: center;
+    font-size: .7rem;
 }
-
-#about
-h1{
-    font-size: 1rem;
-}
-#about
+.line-container
 p{
-    font-size: .61rem;
+    width:200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    border-radius: 5px;
+    background-color: #F4A49E;
 }
 
-.about_container_preferences{
-    margin-top: 15px;
+.line-container
+.line{
+    display: block;
+    height: 4px;
+    width: 50px;
+    background-color: #fff;
 }
 
-/* Button get resume */
+.illustration_pagraphe{
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+}
+
+#poulet{
+    width: 190px;
+}
+
+.paragraphe{
+    font-size: .6rem;
+}
+
+
+@media only screen and (min-width: 768px){
+    .paragrapheContainer{
+        flex-direction: row;
+    }
+}
+
+.preference{
+    margin-top: 55px;
+}
 
 #about
 button{
-    height: 50px;
-    font-size: .7rem;
-    background-color: inherit;
-    border: 1px solid #fff;
-    color: #fff;
-    border-radius: 999px;
-}
-
-#about
-button:hover{
-    color: #fff;
-    border: 1px solid #BC78FF;
-    background-color: #BC78FF;
-    transition: all .2s ease-in;
-    cursor: pointer;
-}
-
-/* Responsive */
-
-@media only screen and (max-width: 300px) {
-    #about
-    button{
-        width: 180px;
-    }
-}
-
-@media only screen and (min-width: 300px) {
-    #about
-    button{
-        width: 260px;
-    }
-}
-
-@media only screen and (min-width: 768px) {
-    #about
-    button{
-        width: 260px;
-    }
-}
-
-
-@media only screen and (min-width: 992px) {
-    #about
-    h1{
-        font-size: 1.5rem;
-    }
-
-    #about
-    p{
-        font-size: .7rem;
-    }
-
-    #about
-    button{
-        width: 360px;
-    }
-}
-
-@media only screen and (min-width: 1200px) {
 
 }
+
