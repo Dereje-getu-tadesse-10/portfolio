@@ -1,42 +1,47 @@
 #projects{
-    position: relative;
-    height: 100vh;
-    font-size: 1rem;
-}
-
-.projectImageTechno{
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    width:85%;
 
 }
 
+.myProjectItems{
+    background-color: #32324C;
+    padding:10px;
+    margin:30px auto;
+}
+
+.myProjectItems h2{
+    padding-top:10px;
+}
 
 .projectImage{
-    margin: auto;
-    width:100%;
-}
-
-#modale{
-    position:absolute;
-    top:0;
-    left:0;
-    height: 100vh;
     width: 100%;
-    z-index: 99;
-    display: none;
-    background-color: #32324C;
-}
-#close-btn{
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 40px;
-    cursor:pointer;
+    padding:5px;
+    margin: 0 auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.openModale{
-    width: 150px;
-    margin: 15px auto;
+.projectImage
+img{
+    width: 90%;
+}
+
+.paragrapheDescription{
+    padding-top:20px;
+}
+
+.technos{
+    padding-top:20px;
+}
+
+.projectLink{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 50%;
+    margin-top: 10px;
+    background-color: #d88875;
+    color: #fff;
 }
