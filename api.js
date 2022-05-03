@@ -1,9 +1,10 @@
-function getPosts(name) {
-  fetch(
-    `https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/${name}`
-  )
+function getPublications(name) {
+  let me = `https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@${name}`;
+  fetch(me)
     .then((res) => res.json())
-    .then((data) => console.log(data));
+    .then((data) => {
+      console.log(data);
+    });
 }
 
-getPosts("@dakabieui");
+getPublications("dakabieui");
