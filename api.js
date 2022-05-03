@@ -4,6 +4,9 @@ function getPublications(name) {
     .then((res) => res.json())
     .then((data) => {
       console.log(data);
+      console.log(data.items[0].title);
+      console.log(data.items[0].thumbnail);
+      console.log(data.items[0].categories);
     });
 }
 
