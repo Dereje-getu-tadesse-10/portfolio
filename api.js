@@ -17,6 +17,8 @@ function getPublications(name) {
       let blog = data.items;
       console.log(blog);
       blog.forEach((element) => {
+        const mainContainer = document.createElement("div");
+        mainContainer.classList.add("blogContainer");
         let img = document.createElement("img");
         img.setAttribute("src", element.thumbnail);
 
@@ -31,9 +33,11 @@ function getPublications(name) {
         // ajout blog dans la div container
         lnk.setAttribute("href", element.link);
         lnk.classList.add("lienBlog");
-        container.appendChild(img);
-        container.appendChild(titleH);
-        container.appendChild(lnk);
+        mainContainer.appendChild(img);
+        mainContainer.appendChild(titleH);
+        mainContainer.appendChild(lnk);
+        container.appendChild(mainContainer);
+        // container.insertBefore(mainContainer, null);
       });
     });
 }
