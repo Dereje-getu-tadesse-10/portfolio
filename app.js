@@ -9,14 +9,14 @@ form.addEventListener("submit", (e) => {
   let valueEmail = email.value;
   let valueMessage = message.value;
 
-  const data = new FormData();
+  const bodyForm = new FormData(form);
 
   e.preventDefault();
   let url = "./form.php";
 
-  fetch(url, {
+  fetch('./form.php', {
     method: "POST",
-    body: data,
+    body: bodyForm,
   })
     .then((response) => {
       return response.json();
@@ -24,4 +24,6 @@ form.addEventListener("submit", (e) => {
     .then((data) => {
       console.log(data);
     });
+
+
 });
