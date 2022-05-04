@@ -1,12 +1,38 @@
+const title = document.querySelector(".titreBlog");
+const description = document.querySelector(".descriptionBlog");
+const link = document.querySelector(".linkblog");
+const container = document.querySelector(".card");
+
 function getPublications(name) {
   let me = `https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@${name}`;
   fetch(me)
     .then((res) => res.json())
     .then((data) => {
       console.log(data);
-      console.log(data.items[0].title);
-      console.log(data.items[0].thumbnail);
-      console.log(data.items[0].categories);
+
+      //   title.textContent = data.items[0].title;
+      //   li = data.items[0].link;
+      //   link.setAttribute("href", li);
+
+      let blog = data.items;
+      console.log(blog);
+      blog.forEach((element) => {
+        let img = document.createElement("img");
+        img.setAttribute("src", element.thumbnail);
+
+        let titleH = document.createElement("p");
+        // titleH.classListAdd(".titreBlog");
+
+        let txtTitle = document.createTextNode(element.title);
+        titleH.appendChild(txtTitle);
+
+        let lnk = document.createElement("a");
+        lnk.setAttribute("href", element.link);
+
+        container.appendChild(img);
+        container.appendChild(titleH);
+        container.appendChild(lnk);
+      });
     });
 }
 
