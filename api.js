@@ -10,10 +10,6 @@ function getPublications(name) {
     .then((data) => {
       console.log(data);
 
-      //   title.textContent = data.items[0].title;
-      //   li = data.items[0].link;
-      //   link.setAttribute("href", li);
-
       let blog = data.items;
       console.log(blog);
       blog.forEach((element) => {

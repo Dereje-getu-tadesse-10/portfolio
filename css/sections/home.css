@@ -10,6 +10,7 @@ header{
     font-family: 'Poppins';
     z-index: 199;
     height: 90px;
+    background-color: red;
 }
 
 /* Logo width */
