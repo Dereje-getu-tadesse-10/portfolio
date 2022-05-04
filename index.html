@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="./css/sections/projects.css" />
     <link rel="stylesheet" href="./css/sections/responsive.css" />
     <link rel="stylesheet" href="./css/sections/blog.css" />
-    <link rel="stylesheet" href="./css/sections/form.css">
+    <link rel="stylesheet" href="./css/sections/form.css" />
     <title>Portfolio</title>
   </head>
   <body>
@@ -590,13 +590,13 @@
       <!-- Section formulair -->
 
       <section id="form">
-          <h1>Contact</h1>
-        <form methode="post">
-            <div class="errors"></div>
-            <input type="text" name="" id=""/>
-            <input type="email" name="email">
-            <textarea name="message" id="" cols="30" rows="10"></textarea>
-            <button type="submit">Send</button>
+        <h1>Contact</h1>
+        <form method="POST">
+          <div class="errors"></div>
+          <input type="email" name="e" class="email" />
+          <input type="text" name="s" class="sujet" />
+          <textarea name="m" cols="30" rows="10" class="text"></textarea>
+          <button type="submit">Send</button>
         </form>
       </section>
     </main>
