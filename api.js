@@ -21,14 +21,16 @@ function getPublications(name) {
         img.setAttribute("src", element.thumbnail);
 
         let titleH = document.createElement("p");
-        // titleH.classListAdd(".titreBlog");
 
         let txtTitle = document.createTextNode(element.title);
         titleH.appendChild(txtTitle);
 
         let lnk = document.createElement("a");
-        lnk.setAttribute("href", element.link);
+        lnk.textContent = "lire la suite";
 
+        // ajout blog dans la div container
+        lnk.setAttribute("href", element.link);
+        lnk.classList.add("lienBlog");
         container.appendChild(img);
         container.appendChild(titleH);
         container.appendChild(lnk);
