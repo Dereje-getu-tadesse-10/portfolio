@@ -461,10 +461,20 @@
       <section id="form">
         <h1>Contact</h1>
         <form method="POST">
-          <div class="errors"></div>
-          <input type="email" name="mail" class="email" />
-          <input type="text" name="sujet" class="sujet" />
-          <textarea name="message" cols="30" rows="10" class="text"></textarea>
+          <div class="errors">
+            <p class="emailError"></p>
+            <p class="sujetError"></p>
+            <p class="messageError"></p>
+          </div>
+          <input type="email" name="mail" placeholder="Email" class="email" />
+          <input type="text" name="sujet" placeholder="Sujet" class="sujet" />
+          <textarea
+            name="message"
+            placeholder="Message"
+            cols="30"
+            rows="10"
+            class="text"
+          ></textarea>
           <button type="submit">Send</button>
         </form>
       </section>

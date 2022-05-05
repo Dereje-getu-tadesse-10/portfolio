@@ -11,6 +11,18 @@ form.addEventListener("submit", (e) => {
   let valueEmail = email.value;
   let valueMessage = message.value;
 
+  // const html element
+  const emailE = document.querySelector(".emailError");
+  const sujetE = document.querySelector(".sujetError");
+  const messageE = document.querySelector(".messageError");
+  console.dir(emailE.firstChild);
+  if (valueSujet == "") {
+  }
+  if (valueEmail == "") {
+  }
+  if (valueMessage == "") {
+  }
+
   const bodyForm = new FormData(form);
 
   fetch("./form.php", {
