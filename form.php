@@ -16,7 +16,9 @@ if((isset($_POST['message']))){
 }
 
 if(($email)&&($sujet)&&($message)){
-    $res = array('validation' => "Email envoyé");
-    echo json_encode($res);
-
+    $ok = array('bravo' => "c'est bon");
+    echo json_encode($ok);
+}else{
+    $ok = array('pas bon' => "c'est pas bon !!");
+    echo json_encode($ok);
 }

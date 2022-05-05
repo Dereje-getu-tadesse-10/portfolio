@@ -4,17 +4,16 @@ const email = document.querySelector(".email");
 const message = document.querySelector(".text");
 
 form.addEventListener("submit", (e) => {
-  // value
+  e.preventDefault();
+  let url = "./form.php";
+
   let valueSujet = sujet.value;
   let valueEmail = email.value;
   let valueMessage = message.value;
 
   const bodyForm = new FormData(form);
 
-  e.preventDefault();
-  let url = "./form.php";
-
-  fetch('./form.php', {
+  fetch("./form.php", {
     method: "POST",
     body: bodyForm,
   })
@@ -24,6 +23,4 @@ form.addEventListener("submit", (e) => {
     .then((data) => {
       console.log(data);
     });
-
-
 });
