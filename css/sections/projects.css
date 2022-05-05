@@ -1,8 +1,26 @@
 
 .myProjectItems{
-    background-color: #32324C;
-    padding:10px;
+    /* padding:10px; */
     margin:30px auto;
+}
+
+.ItemsImages{
+    width:100%;
+}
+
+.items{
+    width: 100%;
+    margin-top:50px;
+    padding:5px;
+    background-color: #32324C;
+}
+.items
+h2{
+    font-size: 1.5rem;
+}
+.languagesListe{
+    margin-top: 10px;
+    font-weight: 600;
 }
 
 .myProjectItems h2{
@@ -39,6 +57,8 @@ img{
     height: 40px;
     width: 50%;
     margin-top: 10px;
+    font-family: 'poppins';
     background-color: #d88875;
     color: #fff;
+    cursor: pointer;
 }

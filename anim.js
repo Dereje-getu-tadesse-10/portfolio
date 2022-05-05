@@ -7,7 +7,6 @@ const tl = gsap.timeline();
 function animationNavbar() {
   tl.to(".navAnimation", {
     y: 0,
-    duration: 1,
     autoAlpha: 1,
     ease: Power4,
   })

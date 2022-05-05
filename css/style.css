@@ -13,6 +13,7 @@ body{
 
 main{
     width: 90%;
+    padding: 2px;
     margin:  auto;
     font-family: 'Poppins';
     color: white;
