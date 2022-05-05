@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7073367f-b2d5-4d17-94b7-3f515889e1c9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/assets/1x/Fichier 2.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/sections/blog.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/sections/blog.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/form.php" beforeDir="false" afterPath="$PROJECT_DIR$/form.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/sections/form.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/sections/form.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/sections/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/sections/home.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -32,7 +32,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Applications/MAMP/htdocs/t/portfolio",
+    "last_opened_file_path": "/Applications/MAMP/htdocs/portfolio",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "preferences.lookFeel",
     "vue.rearranger.settings.migration": "true"
@@ -54,6 +54,7 @@
       <workItem from="1651335069754" duration="10778000" />
       <workItem from="1651386853896" duration="18539000" />
       <workItem from="1651683862783" duration="2922000" />
+      <workItem from="1651769438602" duration="442000" />
     </task>
     <servers />
   </component>
