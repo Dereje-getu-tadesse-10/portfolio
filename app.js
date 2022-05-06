@@ -12,15 +12,20 @@ form.addEventListener("submit", (e) => {
   let valueMessage = message.value;
 
   // const html element
-  const emailE = document.querySelector(".emailError");
-  const sujetE = document.querySelector(".sujetError");
-  const messageE = document.querySelector(".messageError");
-  console.dir(emailE.firstChild);
-  if (valueSujet == "") {
-  }
+  const errors = document.querySelector(".errors");
+  console.dir();
+
   if (valueEmail == "") {
+    errors.firstElementChild.nextSibling.data = "email vide ou incorrecte";
   }
+  if (valueSujet == "") {
+    errors.firstElementChild.nextElementSibling.nextSibling.data =
+      "sujet vide ou incorrecte";
+  }
+
   if (valueMessage == "") {
+    errors.firstElementChild.nextElementSibling.nextElementSibling.nextSibling.data =
+      "Message vide ou incorrecte";
   }
 
   const bodyForm = new FormData(form);

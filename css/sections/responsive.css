@@ -14,16 +14,11 @@
     main{
         width: 90%;
     }
+    /* .ItemsImages{
+        width:100%;
+    } */
 }
 
-@media only screen and (min-width:1200px) {
-    header{
-        width: 70%;
-    }
-    main{
-        width: 70%;
-    }
-}
 
 
 @media only screen and (min-width:501px){
@@ -33,6 +28,15 @@
     #about
     button{
         margin-top: 15px;
+    }
+    /* .ItemsImages{
+        width:100%;
+        display: flex;
+        justify-content: center;
+        margin:auto;
+    } */
+    form{
+        max-width: 501px;
     }
 }
 
@@ -64,9 +68,22 @@
 
 @media only screen and (min-width:1200px){
 
+    header{
+        width: 80%;
+    }
+    main{
+        width: 80%;
+    }
     #poulet{
         width: 350px;
     }
+    /* .ItemsImages{
+        width:90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin:auto;
+    } */
 
 }
 
