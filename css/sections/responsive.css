@@ -17,6 +17,7 @@
     /* .ItemsImages{
         width:100%;
     } */
+
 }
 
 
@@ -54,7 +55,6 @@
         width: 55%;
     }
     .myProjectItems{
-        display: flex;
         gap: 20px;
     }
     .card{
@@ -66,6 +66,36 @@
     }
 }
 
+@media only screen and (max-width: 970px) {
+    .ItemsImages{
+        width: 100%;
+        display: flex;
+        margin: auto;
+    }
+    .myProjectItems{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .items{
+        width: 40%;
+    }
+}
+
+@media only screen and (min-width:970px){
+    .myProjectItems{
+        display:flex;
+        flex-wrap: wrap;
+        width: 90%;
+    }
+    .ItemsImages{
+        width: 80%;
+        display: flex;
+        margin: auto;
+    }
+    .items{
+        width: 30%;
+    }
+}
 @media only screen and (min-width:1200px){
 
     header{
