@@ -47,6 +47,6 @@ form.addEventListener("submit", (e) => {
 function regExMail(email) {
   let rep = 0;
   const regEx =  /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-  const validate = email.match(regEx) ? rep = 1 : rep = 0;
+  email.match(regEx) ? rep = 1 : rep = 0;
   return rep;
 }
