@@ -17,9 +17,16 @@ function getPublications(name) {
         mainContainer.classList.add("blogContainer");
         let img = document.createElement("img");
         img.setAttribute("src", element.thumbnail);
-
         let titleH = document.createElement("p");
+        const tags = document.createElement('p');
 
+        // for (let i = 0; i < element.categories.length; i++) {
+        //   console.log(element.categories[i]);
+        //   const txt = document.createTextNode(element.categories);
+        //   tags.appendChild(txt);
+        // }
+
+        console.log(element);
         let txtTitle = document.createTextNode(element.title);
         titleH.appendChild(txtTitle);
 

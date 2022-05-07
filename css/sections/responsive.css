@@ -30,12 +30,6 @@
     button{
         margin-top: 15px;
     }
-    /* .ItemsImages{
-        width:100%;
-        display: flex;
-        justify-content: center;
-        margin:auto;
-    } */
     form{
         max-width: 501px;
     }
@@ -54,9 +48,7 @@
     .paragraphe{
         width: 55%;
     }
-    .myProjectItems{
-        gap: 20px;
-    }
+
     .card{
         display: flex;
     }
@@ -67,7 +59,7 @@
 }
 
 @media only screen and (max-width: 970px) {
-    .ItemsImages{
+    /* .ItemsImages{
         width: 100%;
         display: flex;
         margin: auto;
@@ -78,24 +70,10 @@
     }
     .items{
         width: 40%;
-    }
+    } */
 }
 
-@media only screen and (min-width:970px){
-    .myProjectItems{
-        display:flex;
-        flex-wrap: wrap;
-        width: 90%;
-    }
-    .ItemsImages{
-        width: 80%;
-        display: flex;
-        margin: auto;
-    }
-    .items{
-        width: 30%;
-    }
-}
+
 @media only screen and (min-width:1200px){
 
     header{
