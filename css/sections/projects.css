@@ -1,79 +1,83 @@
-
-.myProjectItems{
-    /* padding:10px; */
-    margin:30px auto;
+#projects h1 {
+  padding: 5px;
+  width: 100px;
+  justify-content: center;
+  align-items: center;
+  background-color: #df5646;
 }
 
-/* .ItemsImages{
-
-} */
-
-.items{
-    margin-top:50px;
-    padding:2px;
-    background-color: #32324C;
-}
-.items
-h2{
-    padding: 10px;
-    font-size: 1.5rem;
-}
-.languagesListe{
-    padding: 10px;
-    margin-top: 10px;
-    font-weight: 600;
+.myProjectItems {
+  margin: 30px auto;
 }
 
-.items
-p{
-    padding: 10px;
+.items {
+  margin-top: 50px;
+  padding: 2px;
+  background-color: #32324c;
+}
+.items h2 {
+  padding: 10px;
+  font-size: 1.5rem;
+}
+.languagesListe {
+  padding: 5px;
+  font-weight: 600;
 }
 
-.ItemsImages{
-    padding: 10px;
-    width: 70%;
+.items p {
+  padding: 5px;
+}
+
+.ItemsImages {
+  padding: 10px;
+  max-width: 100%;
+}
+
+.paragrapheDescription {
+  padding-top: 5px;
+}
+
+.technos {
+  padding-top: 10px;
+}
+
+.projectLink {
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 50%;
+  font-family: "poppins";
+  background-color: #d88875;
+  color: #fff;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 500px) {
+  .items {
+    max-width: 350px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .myProjectItems {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin:auto;
+    margin: auto;
+    gap: 20px;
+  }
 }
 
-.paragrapheDescription{
-    padding-top:20px;
+#labos {
+  margin-top: 80px;
 }
 
-.technos{
-    padding-top:20px;
-}
-
-.projectLink{
-    margin: 10px;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    height: 40px;
-    width: 50%;
-    font-family: 'poppins';
-    background-color: #d88875;
-    color: #fff;
-    cursor: pointer;
-}
-
-@media only screen and (min-width:500px){
-    .items{
-        max-width: 350px;
-    }
-}
-@media only screen and (min-width:768px){
-    .myProjectItems{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        margin: auto;
-        gap: 20px;
-    }
-    .items{
-
-    }
+#labos h1 {
+  padding: 5px;
+  width: 85px;
+  justify-content: center;
+  align-items: center;
+  background-color: #df5646;
 }

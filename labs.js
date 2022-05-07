@@ -3,12 +3,9 @@ fetch("./projects/labs/labs.json")
     return res.json();
   })
   .then((data) => {
-    console.log(data);
 
     data.forEach((element) => {
-      console.log(element);
       const me = document.getElementsByClassName("myProjectItems")[1];
-      console.log(me);
       const projets = document.createElement("div");
       projets.classList.add("items");
       const img = document.createElement("img");

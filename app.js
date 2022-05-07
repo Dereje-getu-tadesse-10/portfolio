@@ -11,21 +11,22 @@ form.addEventListener("submit", (e) => {
   let valueEmail = email.value;
   let valueMessage = message.value;
 
-  // const html element
+  console.log(valueSujet);
   const errors = document.querySelector(".errors");
-  console.dir();
-
+  const errMail = document.querySelector('.emailError');
+  const errSujet = document.querySelector('.sujetError');
+  const errMessage = document.querySelector('.messageError');
   if (valueEmail == "") {
-    errors.firstElementChild.nextSibling.data = "email vide ou incorrecte";
+    errMail.textContent = "Email vide";
+  }else if(!regExMail(valueEmail)){
+    errMail.textContent = "Email incorrecte";
   }
   if (valueSujet == "") {
-    errors.firstElementChild.nextElementSibling.nextSibling.data =
-      "sujet vide ou incorrecte";
+    errSujet.textContent="sujet vide"
   }
 
   if (valueMessage == "") {
-    errors.firstElementChild.nextElementSibling.nextElementSibling.nextSibling.data =
-      "Message vide ou incorrecte";
+    errMessage.textContent = "Message vide";
   }
 
   const bodyForm = new FormData(form);
@@ -41,3 +42,11 @@ form.addEventListener("submit", (e) => {
       console.log(data);
     });
 });
+
+
+function regExMail(email) {
+  let rep = 0;
+  const regEx =  /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  const validate = email.match(regEx) ? rep = 1 : rep = 0;
+  return rep;
+}

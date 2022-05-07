@@ -8,10 +8,8 @@ function getPublications(name) {
   fetch(me)
     .then((res) => res.json())
     .then((data) => {
-      console.log(data);
 
       let blog = data.items;
-      console.log(blog);
       blog.forEach((element) => {
         const mainContainer = document.createElement("div");
         mainContainer.classList.add("blogContainer");
@@ -20,13 +18,6 @@ function getPublications(name) {
         let titleH = document.createElement("p");
         const tags = document.createElement('p');
 
-        // for (let i = 0; i < element.categories.length; i++) {
-        //   console.log(element.categories[i]);
-        //   const txt = document.createTextNode(element.categories);
-        //   tags.appendChild(txt);
-        // }
-
-        console.log(element);
         let txtTitle = document.createTextNode(element.title);
         titleH.appendChild(txtTitle);
 
