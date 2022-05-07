@@ -8,6 +8,7 @@ fetch("./projects/labs/labs.json")
       const me = document.getElementsByClassName("myProjectItems")[1];
       const projets = document.createElement("div");
       projets.classList.add("items");
+      projets.classList.add("bckColor");
       const img = document.createElement("img");
       img.classList.add("ItemsImages");
       const title = document.createElement("h2");
@@ -16,6 +17,7 @@ fetch("./projects/labs/labs.json")
       ul.classList.add("languagesListe");
       const button = document.createElement("a");
       button.classList.add("projectLink");
+      button.classList.add("bckColorBtn");
       // text
       const titleTxt = document.createTextNode(element.nom);
       title.appendChild(titleTxt);

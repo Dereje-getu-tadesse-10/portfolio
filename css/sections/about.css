@@ -1,53 +1,103 @@
-#about{
-    height: 110vh;
-    padding: 1px;
+#about {
+  height: 110vh;
+  padding: 1px;
 }
-
-
-h6{
-    font-size:2rem;
+#about h1 {
+  font-size: 2rem;
+  font-family: "PT Serif", serif;
+  color: #df5646;
 }
 
 /* Container paragrahe + illustration */
 
-
-.illustration_pagraphe{
-    height: 90%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
+.illustration_pagraphe {
+  height: 90%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
 }
 
-#poulet{
-    width: 190px;
+#poulet {
+  width: 190px;
 }
 
-.paragraphe{
-    font-size: 1rem;
-    height: 50%;
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-    padding: 2px;
+.paragraphe {
+  font-size: 1rem;
+  /* height: 50%; */
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  padding: 2px;
 }
 
 /* Style button */
 
-#about
-button{
-    height: 50px;
-    width: 190px;
-    margin: 0 auto;
-    border: 2px solid #d88875;
-    background-color: inherit;
-    color: #ffffff;
-    font-size: 1.2rem;
-    cursor:pointer;
+#about button {
+  height: 50px;
+  width: 190px;
+  margin: 0 auto;
+  border: 2px solid #d88875;
+  background-color: inherit;
+  color: #ffffff;
+  font-family: "PT Serif", serif;
+  font-size: 1.2rem;
+  cursor: pointer;
 }
 
-#about
-button:hover{
-    background-color: #d88875;
-    transition: all .2s ease-in-out;
+#about button:hover {
+  background-color: #d88875;
+  transition: all 0.2s ease-in-out;
+}
+
+@media only screen and (max-width: 500px) {
+  .paragraphe {
+    margin-top: -90px;
+    /* height: 40%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+}
+
+@media only screen and (min-width: 501px) {
+  .paragraphe {
+    margin-top: -120px;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .illustration {
+    margin-top: -240px;
+  }
+  #poulet {
+    min-width: 219px;
+  }
+  .illustration_pagraphe {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .paragraphe {
+    width: 50%;
+    font-size: 1.11rem;
+  }
+  .downloadResume {
+    font-weight: bold;
+    margin-left: 0 !important;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .illustration {
+    margin-top: -90px;
+  }
+  #poulet {
+    min-width: 280px;
+  }
 }

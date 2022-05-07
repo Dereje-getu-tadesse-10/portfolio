@@ -1,65 +1,40 @@
-@media only screen and (min-width:501px) {
-    header{
-        width: 80%;
-    }
-    main{
-        width: 80%;
-    }
+@media only screen and (min-width: 501px) {
+  header {
+    width: 80%;
+  }
+  main {
+    width: 80%;
+  }
 }
 
-@media only screen and (max-width:500px) {
-    header{
-        width: 90%;
-    }
-    main{
-        width: 90%;
-    }
-    /* .ItemsImages{
+@media only screen and (max-width: 500px) {
+  header {
+    width: 90%;
+  }
+  main {
+    width: 90%;
+  }
+  /* .ItemsImages{
         width:100%;
     } */
+}
 
+@media only screen and (min-width: 501px) {
+  .preference {
+    margin-top: 15px;
+  }
+  #about button {
+    margin-top: 15px;
+  }
+  form {
+    max-width: 501px;
+  }
 }
 
 
-
-@media only screen and (min-width:501px){
-    .preference{
-        margin-top:15px
-    }
-    #about
-    button{
-        margin-top: 15px;
-    }
-    form{
-        max-width: 501px;
-    }
-}
-
-@media only screen and (min-width:800px){
-    .illustration_pagraphe{
-        display: flex;
-        flex-direction: row;
-    }
-
-    #poulet{
-        width: 290px;
-    }
-
-    .paragraphe{
-        width: 55%;
-    }
-
-    .card{
-        display: flex;
-    }
-    .blogContainer
-    img{
-        width: 50%;
-    }
-}
 
 @media only screen and (max-width: 970px) {
-    /* .ItemsImages{
+  /* .ItemsImages{
         width: 100%;
         display: flex;
         margin: auto;
@@ -73,34 +48,30 @@
     } */
 }
 
-
-@media only screen and (min-width:1200px){
-
-    header{
-        width: 80%;
-    }
-    main{
-        width: 80%;
-    }
-    #poulet{
+@media only screen and (min-width: 1200px) {
+  header {
+    width: 80%;
+  }
+  main {
+    width: 80%;
+  }
+  /* #poulet{
         width: 350px;
-    }
-    /* .ItemsImages{
+    } */
+  /* .ItemsImages{
         width:90%;
         display: flex;
         justify-content: center;
         align-items: center;
         margin:auto;
     } */
-
 }
 
-@media only screen and (max-width:500px){
-    .preference{
-        margin-top:15px
-    }
-    #about
-    button{
-        margin-top: 15px;
-    }
+@media only screen and (max-width: 500px) {
+  .preference {
+    margin-top: 15px;
+  }
+  #about button {
+    margin-top: 15px;
+  }
 }

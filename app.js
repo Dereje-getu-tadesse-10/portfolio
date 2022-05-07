@@ -11,26 +11,23 @@ form.addEventListener("submit", (e) => {
   let valueEmail = email.value;
   let valueMessage = message.value;
 
-  console.log(valueSujet);
-  const errors = document.querySelector(".errors");
   const errMail = document.querySelector('.emailError');
   const errSujet = document.querySelector('.sujetError');
   const errMessage = document.querySelector('.messageError');
   if (valueEmail == "") {
     errMail.textContent = "Email vide";
-  }else if(!regExMail(valueEmail)){
+  }
+  if(!regExMail(valueEmail)){
     errMail.textContent = "Email incorrecte";
   }
   if (valueSujet == "") {
-    errSujet.textContent="sujet vide"
+    errSujet.textContent="sujet vide";
   }
-
   if (valueMessage == "") {
     errMessage.textContent = "Message vide";
   }
 
   const bodyForm = new FormData(form);
-
   fetch("./form.php", {
     method: "POST",
     body: bodyForm,
@@ -39,7 +36,7 @@ form.addEventListener("submit", (e) => {
       return response.json();
     })
     .then((data) => {
-      console.log(data);
+
     });
 });
 

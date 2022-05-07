@@ -1,14 +1,12 @@
 #projects h1 {
   padding: 5px;
-  width: 100px;
-  justify-content: center;
-  align-items: center;
-  background-color: #df5646;
+  font-family: "PT Serif", serif;
+  color: #df5646;
 }
 
-.myProjectItems {
+/* .myProjectItems {
   margin: 30px auto;
-}
+} */
 
 .items {
   margin-top: 50px;
@@ -54,7 +52,7 @@
   cursor: pointer;
 }
 
-@media only screen and (min-width: 500px) {
+/* @media only screen and (min-width: 500px) {
   .items {
     max-width: 350px;
   }
@@ -68,16 +66,41 @@
     margin: auto;
     gap: 20px;
   }
-}
+} */
 
 #labos {
   margin-top: 80px;
 }
-
+.bckColor {
+  background-color: #d88875;
+}
+.bckColorBtn {
+  background-color: #df5646;
+}
 #labos h1 {
   padding: 5px;
-  width: 85px;
-  justify-content: center;
-  align-items: center;
-  background-color: #df5646;
+  font-family: "PT Serif", serif;
+}
+
+@media only screen and (max-width: 500px) {
+  .myProjectItems {
+    margin: 60px auto;
+  }
+  .items {
+    max-width: 280px;
+    margin: 25px auto;
+  }
+}
+
+@media only screen and (min-width: 501px) {
+  .myProjectItems {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 17px;
+    margin: auto;
+  }
+  .items {
+    max-width: 285px;
+    margin: 25px auto;
+  }
 }
