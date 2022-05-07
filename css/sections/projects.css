@@ -9,10 +9,21 @@
 } */
 
 .items {
+  position: relative;
   margin-top: 50px;
   padding: 2px;
   background-color: #32324c;
 }
+
+.modale {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #df5646;
+}
+
 .items h2 {
   padding: 10px;
   font-size: 1.5rem;
@@ -27,7 +38,6 @@
 }
 
 .ItemsImages {
-  padding: 10px;
   max-width: 100%;
 }
 
@@ -100,7 +110,7 @@
     margin: auto;
   }
   .items {
-    max-width: 285px;
+    max-width: 250px;
     margin: 25px auto;
   }
 }

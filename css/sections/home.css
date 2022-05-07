@@ -91,6 +91,9 @@ ul li a {
   header {
     width: 80% !important;
   }
+  main {
+    width: 80%;
+  }
   .presentation h1 {
     font-size: 3rem;
   }
@@ -99,5 +102,8 @@ ul li a {
   }
   .presentation p {
     font-size: 1.2rem;
+  }
+  .openMenu {
+    height: 30px;
   }
 }

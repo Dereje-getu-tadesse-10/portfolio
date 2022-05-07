@@ -12,7 +12,7 @@ function animationNavbar() {
   })
     .to("a", {
       autoAlpha: 1,
-      stagger: 0.7,
+      stagger: 0.4,
       ease: Power2,
     })
     .reverse();
