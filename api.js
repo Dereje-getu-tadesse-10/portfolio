@@ -8,11 +8,9 @@ function getPublications(name) {
   fetch(me)
     .then((res) => res.json())
     .then((data) => {
-
       let blog = data.dataMedium;
 
       blog.forEach((element) => {
-        console.log(element);
         const mainContainer = document.createElement("div");
         mainContainer.classList.add("blogContainer");
         let img = document.createElement("img");

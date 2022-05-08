@@ -6,7 +6,17 @@ const message = document.querySelector(".text");
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   let url = "./form.php";
-
+  const bodyForm = new FormData(form);
+  fetch(url, {
+    method: "POST",
+    body: bodyForm,
+  })
+    .then((response) => {
+      return response.json();
+    })
+    .then((data) => {
+      console.log(data);
+    });
   let valueSujet = sujet.value;
   let valueEmail = email.value;
   let valueMessage = message.value;
@@ -16,8 +26,7 @@ form.addEventListener("submit", (e) => {
   const errMessage = document.querySelector('.messageError');
   if (valueEmail == "") {
     errMail.textContent = "Email vide";
-  }
-  if(!regExMail(valueEmail)){
+  }else if(!regExMail(valueEmail)){
     errMail.textContent = "Email incorrecte";
   }
   if (valueSujet == "") {
@@ -27,23 +36,13 @@ form.addEventListener("submit", (e) => {
     errMessage.textContent = "Message vide";
   }
 
-  const bodyForm = new FormData(form);
-  fetch("./form.php", {
-    method: "POST",
-    body: bodyForm,
-  })
-    .then((response) => {
-      return response.json();
-    })
-    .then((data) => {
 
-    });
 });
 
 
 function regExMail(email) {
-  let rep = 0;
+  let isValid = 0;
   const regEx =  /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-  email.match(regEx) ? rep = 1 : rep = 0;
-  return rep;
+  email.match(regEx) ? isValid = 1 : isValid = 0;
+  return isValid;
 }

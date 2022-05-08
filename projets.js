@@ -1,3 +1,5 @@
+
+
 fetch("./projects/projets.json")
   .then((res) => {
     return res.json();
@@ -18,9 +20,6 @@ fetch("./projects/projets.json")
       const button = document.createElement("a");
       button.classList.add("projectLink");
       // modale
-      const modale = document.createElement("div")
-      modale.classList.add('modale');
-
       // text
       const titleTxt = document.createTextNode(element.nom);
       title.appendChild(titleTxt);
@@ -38,7 +37,6 @@ fetch("./projects/projets.json")
       //   li.appendChild(document.createTextNode(element.languages[index]));
       //   ul.appendChild(li);
       // }
-      projets.appendChild(modale);
       projets.appendChild(img);
       projets.appendChild(title);
       projets.appendChild(paragraphe);
@@ -47,3 +45,5 @@ fetch("./projects/projets.json")
       me.appendChild(projets);
     });
   });
+
+  // add element modal

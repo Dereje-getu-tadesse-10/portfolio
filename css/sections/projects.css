@@ -1,104 +1,32 @@
-#projects h1 {
-  padding: 5px;
-  font-family: "PT Serif", serif;
-  color: #df5646;
+#labos {
+  margin-top: 100px;
 }
-
-/* .myProjectItems {
-  margin: 30px auto;
-} */
-
 .items {
-  position: relative;
-  margin-top: 50px;
-  padding: 2px;
+  padding: 10px;
+  border-radius: 5px;
   background-color: #32324c;
 }
 
-.modale {
-  position: absolute;
-  height: 100%;
+.items .ItemsImages {
   width: 100%;
-  top: 0;
-  left: 0;
-  background-color: #df5646;
+  border-radius: 5px;
 }
-
-.items h2 {
-  padding: 10px;
-  font-size: 1.5rem;
-}
-.languagesListe {
-  padding: 5px;
-  font-weight: 600;
-}
-
-.items p {
-  padding: 5px;
-}
-
-.ItemsImages {
-  max-width: 100%;
-}
-
-.paragrapheDescription {
-  padding-top: 5px;
-}
-
-.technos {
-  padding-top: 10px;
-}
-
 .projectLink {
-  margin: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 40px;
-  width: 50%;
-  font-family: "poppins";
-  background-color: #d88875;
-  color: #fff;
+  width: 150px;
+  margin-top: 13px;
+  border-radius: 5px;
+  color: white;
+  background-color: #df5646;
   cursor: pointer;
 }
-
-/* @media only screen and (min-width: 500px) {
-  .items {
-    max-width: 350px;
-  }
-}
-@media only screen and (min-width: 768px) {
-  .myProjectItems {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    gap: 20px;
-  }
-} */
-
-#labos {
-  margin-top: 80px;
-}
-.bckColor {
-  background-color: #d88875;
-}
-.bckColorBtn {
-  background-color: #df5646;
-}
-#labos h1 {
-  padding: 5px;
-  font-family: "PT Serif", serif;
-}
-
 @media only screen and (max-width: 500px) {
-  .myProjectItems {
-    margin: 60px auto;
-  }
   .items {
-    max-width: 280px;
-    margin: 25px auto;
+    margin: 50px auto;
+    max-width: 380px;
   }
 }
 
@@ -106,11 +34,11 @@
   .myProjectItems {
     display: flex;
     flex-wrap: wrap;
-    gap: 17px;
-    margin: auto;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 50px;
   }
   .items {
-    max-width: 250px;
-    margin: 25px auto;
+    width: 300px;
   }
 }
