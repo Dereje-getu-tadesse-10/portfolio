@@ -1,63 +1,48 @@
-#blogs {
-  margin-top: 150px;
+.blogContainer {
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 10px;
+  background-color: #32324c;
 }
-
-#blogs h1 {
-  padding: 5px;
-  font-family: "PT Serif", serif;
-  color: #df5646;
+.blogContainer .titleBlog {
+  font-size: 1.3rem;
+  font-weight: bold;
 }
-
-.card {
-  margin: auto;
+.blogContainer .descBlog {
+  margin-top: 7px;
+}
+.blogContainer img {
+  width: 100%;
+  border-radius: 10px;
 }
 .lienBlog {
+  margin-top: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100px;
   height: 40px;
-  background-color: #df5646;
+  width: 110px;
+  border-radius: 5px;
   color: white;
-}
-
-.blogContainer {
-  padding: 2px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  margin: 50px auto;
-  height: 250px;
-  background-color: #32324c;
-}
-
-.blogContainer img {
-  width: 100%;
+  background-color: #df5646;
 }
 
 @media only screen and (max-width: 500px) {
-  .card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: auto;
-    max-width: 210px;
+  .blogContainer {
+    max-width: 320px;
+    margin: 50px auto;
   }
 }
+
 @media only screen and (min-width: 501px) {
   .card {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
     flex-wrap: wrap;
-    margin: auto;
+    justify-content: center;
+
     gap: 20px;
   }
   .blogContainer {
-    width: 500px;
-    padding: 5px;
+    max-width: 320px;
   }
 }

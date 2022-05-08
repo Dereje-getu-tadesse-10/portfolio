@@ -4,19 +4,25 @@ const link = document.querySelector(".linkblog");
 const container = document.querySelector(".card");
 
 function getPublications(name) {
-  let me = `https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@${name}`;
+  let me = `https://mediumpostapi.herokuapp.com/?usermedium=${name}`;
   fetch(me)
     .then((res) => res.json())
     .then((data) => {
 
-      let blog = data.items;
+      let blog = data.dataMedium;
+
       blog.forEach((element) => {
+        console.log(element);
         const mainContainer = document.createElement("div");
         mainContainer.classList.add("blogContainer");
         let img = document.createElement("img");
-        img.setAttribute("src", element.thumbnail);
+        img.setAttribute("src", element.image);
         let titleH = document.createElement("p");
-        const tags = document.createElement('p');
+        titleH.classList.add('titleBlog')
+        const desc = document.createElement('p');
+        desc.classList.add('descBlog');
+        const descTxt = document.createTextNode(element.description);
+        desc.appendChild(descTxt);
 
         let txtTitle = document.createTextNode(element.title);
         titleH.appendChild(txtTitle);
@@ -29,11 +35,13 @@ function getPublications(name) {
         lnk.classList.add("lienBlog");
         mainContainer.appendChild(img);
         mainContainer.appendChild(titleH);
+        mainContainer.appendChild(desc)
         mainContainer.appendChild(lnk);
         container.appendChild(mainContainer);
-        // container.insertBefore(mainContainer, null);
+      })
+
+
       });
-    });
 }
 
 getPublications("dakabieui");
