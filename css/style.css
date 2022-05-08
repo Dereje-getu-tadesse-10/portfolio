@@ -1,3 +1,9 @@
+@import url('sections/home.css');
+@import url('sections/about.css');
+@import url('sections/projects.css');
+@import url('sections/blog.css');
+@import url('sections/form.css');
+@import url('sections/footer.css');
 *{
     margin: 0;
     padding: 0;
@@ -5,7 +11,7 @@
     text-decoration: none;
     list-style: none;
 }
-@import url('./sections/home.css');
+
 html,
 body{
     background-color: #1A1A40;

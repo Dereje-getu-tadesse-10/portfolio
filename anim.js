@@ -1,6 +1,3 @@
-import { gsap } from "./gsap/src/all.js";
-import { Power0, Power1, Power2, Power3, Power4 } from "./gsap/src/all.js";
-
 const btn = document.querySelector(".openMenu");
 
 const tl = gsap.timeline();
