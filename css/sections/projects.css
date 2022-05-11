@@ -35,10 +35,16 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 50px;
+    gap: 25px;
     margin-top: 50px;
   }
   .items {
     width: 300px;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .items{
+    width: 280px;
   }
 }
