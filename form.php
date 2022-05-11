@@ -10,21 +10,24 @@ if((isset($_POST['mail']) && (preg_match($regEx, $_POST['mail'])))){
     $err["mail"] = "email invalide";
 }
 
-if((isset($_POST['sujet']))){
+if((empty($_POST['sujet']))){
     $sujet = $_POST['sujet'];
-}else{
     $err["sujet"] = "vide";
-}
-if((isset($_POST['message']))){
-    $message = $_POST['message'];
 }else{
+
+}
+if((empty($_POST['message']))){
+    $message = $_POST['message'];
     $err["message"] = "vide";
+}else{
+
 }
 
+
 if(empty($err)){
-    $err["valide"] = "c'est bon 🥳";
+    $err["validation"] = "c'est bon 🥳";
     echo json_encode($err);
 }else{
-    $err["non"] = "c'est pas bon";
+    $err["validation"] = "c'est pas bon";
     echo json_encode($err);
 }
