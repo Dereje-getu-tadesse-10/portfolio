@@ -1,10 +1,8 @@
 #form {
-  height: 80vh;
   padding: 5px;
   width: 100%;
   display: flex;
   flex-direction: column;
-  margin-top: 150px;
 }
 form {
   display: flex;
@@ -12,7 +10,7 @@ form {
   justify-content: space-between;
   gap: 10px;
   width: 90%;
-  margin: auto;
+  margin:90px  auto;
   font-family: "poppins";
 }
 form input {
