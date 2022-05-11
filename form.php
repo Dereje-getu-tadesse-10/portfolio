@@ -1,5 +1,16 @@
 <?php
 
+$email = $_POST['mail'];
+$sujet = $_POST['sujet'];
+$message = $_POST['message'];
+
+// Mail
+
+$from = $email;
+$to = "d.getutadesse@codeur.online";
+$sujetSend = "Le sujet . $sujet";
+$message = "Le message . $message";
+
 $errs = [];
 
 $regEx = "/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/";
@@ -13,21 +24,19 @@ if((isset($_POST['mail']) && (preg_match($regEx, $_POST['mail'])))){
 if((empty($_POST['sujet']))){
     $sujet = $_POST['sujet'];
     $err["sujet"] = "vide";
-}else{
-
 }
+
 if((empty($_POST['message']))){
     $message = $_POST['message'];
     $err["message"] = "vide";
-}else{
-
 }
 
 
 if(empty($err)){
-    $err["validation"] = "c'est bon 🥳";
-    echo json_encode($err);
+    mail($from,$to,$email,$sujet,$message);
+    $good = array('validation' =>  "c'est bon 🥳");
+    echo json_encode($good);
 }else{
-    $err["validation"] = "c'est pas bon";
+    $err["erreur"] = "c'est pas bon";
     echo json_encode($err);
 }

@@ -52,7 +52,10 @@ form button {
 }
 
 .errors{
+  border-radius: 5px;
+  padding: 10px;
   background-color: red;
+  visibility: hidden;
 }
 .emailError
 .sujetError

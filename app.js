@@ -4,6 +4,15 @@ const email = document.querySelector(".email");
 const message = document.querySelector(".text");
 
 form.addEventListener("submit", (e) => {
+  let valueSujet = sujet.value;
+  let valueEmail = email.value;
+  let valueMessage = message.value;
+
+  const divErr = document.querySelector(".errors");
+  const errMail = document.querySelector(".emailError");
+  const errSujet = document.querySelector(".sujetError");
+  const errMessage = document.querySelector(".messageError");
+  const merci = document.querySelector(".merci");
   e.preventDefault();
   let url = "./form.php";
   const ct = new FormData(form);
@@ -15,27 +24,40 @@ form.addEventListener("submit", (e) => {
       return response.json();
     })
     .then((data) => {
-      console.log(data);
+      // console.log(data.validation);
+      if (data.validation) {
+        form.reset();
+        errMail.textContent = "";
+        errSujet.textContent = "";
+        errMessage.textContent = "";
+        divErr.style.backgroundColor = "green";
+        merci.textContent = "Mecri !";
+      } else {
+        divErr.style.backgroundColor = "";
+        merci.textContent = "";
+      }
     });
-  let valueSujet = sujet.value;
-  let valueEmail = email.value;
-  let valueMessage = message.value;
 
-  const errMail = document.querySelector(".emailError");
-  const errSujet = document.querySelector(".sujetError");
-  const errMessage = document.querySelector(".messageError");
   if (valueEmail == "") {
+    divErr.style.visibility = "visible";
     errMail.textContent = "Email vide";
   } else if (!regExMail(valueEmail)) {
+    divErr.style.visibility = "visible";
     errMail.textContent = "Email incorrecte";
   } else {
     errMail.textContent = "";
   }
   if (valueSujet == "") {
+    divErr.style.visibility = "visible";
     errSujet.textContent = "sujet vide";
+  } else {
+    errSujet.textContent = "";
   }
   if (valueMessage == "") {
+    divErr.style.visibility = "visible";
     errMessage.textContent = "Message vide";
+  } else {
+    errMessage.textContent = "";
   }
 });
 
