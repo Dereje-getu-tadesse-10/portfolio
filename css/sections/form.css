@@ -51,8 +51,13 @@ form button {
   border-radius: 5px;
 }
 
-.errors {
-  /* display: none;
-    padding: 5px; */
+.errors{
   background-color: red;
+}
+.emailError
+.sujetError
+.messageError
+{
+  padding:5px;
+
 }
