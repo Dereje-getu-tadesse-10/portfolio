@@ -12,3 +12,7 @@ burger.addEventListener("click", () => {
     });
   });
 });
+
+const spanYear = document.querySelector(".currentYear");
+
+spanYear.textContent = new Date().getFullYear();
