@@ -96,7 +96,7 @@ ul li a {
     width: 80%;
   }
   .presentation h1 {
-    font-size: 3rem;
+    font-size: 4rem;
   }
   .colorText {
     font-size: 2rem;
@@ -107,4 +107,19 @@ ul li a {
   .openMenu {
     height: 30px;
   }
+}
+
+@media only screen and (min-width: 1200px) {
+  .presentation h1 {
+    text-align: left;
+    font-size: 4rem;
+  }
+  .presentation p {
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+  .colorText{
+    font-size: 3rem;
+  }
+
 }

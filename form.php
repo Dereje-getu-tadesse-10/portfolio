@@ -1,8 +1,8 @@
 <?php
 
-$email = $_POST['mail'];
-$sujet = $_POST['sujet'];
-$message = $_POST['message'];
+$email = strip_tags($_POST['mail']);
+$sujet = strip_tags($_POST['sujet']);
+$message = strip_tags($_POST['message']);
 
 // Mail
 

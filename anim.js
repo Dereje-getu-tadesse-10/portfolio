@@ -1,3 +1,4 @@
+
 const btn = document.querySelector(".openMenu");
 
 const tl = gsap.timeline();
@@ -21,3 +22,4 @@ function animationNavbar() {
     tl.reversed(!tl.reversed());
   });
 })();
+
