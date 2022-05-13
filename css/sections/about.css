@@ -6,7 +6,7 @@
 /* Container paragrahe + illustration */
 
 .illustration_pagraphe {
-  height: 90%;
+  height: 100%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -37,7 +37,6 @@
   color: #ffffff;
   font-family: "PT Serif", serif;
   font-size: 1.2rem;
-  cursor: pointer;
 }
 
 #about button:hover {
@@ -46,6 +45,15 @@
 }
 
 @media only screen and (max-width: 500px) {
+  .illustration_pagraphe{
+   height:108%;
+  }
+  #projects{
+    margin-top: 80px;
+  }
+  #about button{
+    margin-top: 15px;
+  }
   .paragraphe {
     margin-top: -90px;
     /* height: 40%; */
@@ -88,9 +96,12 @@
   }
 }
 
-@media only screen and (min-width: 1000px){
-  
+@media only screen and (min-width: 1200px){
+  #about button{
+    height:55px;
+  }
 }
+
 
 @media only screen and (min-width: 1300px) {
   .illustration {

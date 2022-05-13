@@ -7,7 +7,7 @@ header {
   justify-content: space-between;
   align-items: center;
   font-family: "Poppins";
-  z-index: 199;
+  z-index: 50;
   height: 60px;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
@@ -16,7 +16,7 @@ header {
 /* Logo width */
 #logo {
   width: 30px;
-  z-index: 99;
+  z-index: 50;
 }
 
 /* Menu button */
@@ -28,9 +28,8 @@ header {
   border: none;
   background-color: #df5646;
   color: #fff;
-  cursor: pointer;
   border-radius: 5px;
-  z-index: 99;
+  z-index: 50;
 }
 
 .openMenu:hover {
@@ -128,6 +127,28 @@ ul li a {
   }
   .colorText{
     font-size: 3rem;
+  }
+
+}
+
+@media only screen and (min-width: 1800px) {
+  header{
+    width: 70% !important;
+  }
+  main{
+    width: 70%;
+    margin: auto;
+  }
+  .presentation{
+    text-align: left;
+  }
+  #about,
+  #projects,
+  #labos,
+  #blogs,
+  #form{
+    width:88%;
+    margin:auto;
   }
 
 }
