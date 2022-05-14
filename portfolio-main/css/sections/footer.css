@@ -1,0 +1,28 @@
+footer {
+  padding: 10px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  font-family: "poppins";
+  color: white;
+}
+
+.info-footer {
+  display: flex;
+  justify-content: space-between;
+  width: 70px;
+}
+
+.fa-github,
+.fa-linkedin-in {
+  font-size: 2rem;
+}
+
+#logo-footer {
+  width: 30px;
+}
+.link a {
+  color: white;
+}

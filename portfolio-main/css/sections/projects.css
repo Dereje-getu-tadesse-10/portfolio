@@ -1,0 +1,60 @@
+#labos {
+  margin-top: 100px;
+}
+.items {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #32324c;
+
+}
+
+.projectItems{
+  opacity: 0;
+  visibility: hidden;
+}
+
+.labosItems{
+  opacity: 0;
+  visibility: hidden;
+}
+
+.items .ItemsImages {
+  width: 100%;
+  border-radius: 5px;
+}
+.projectLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 150px;
+  margin-top: 13px;
+  border-radius: 5px;
+  color: white;
+  background-color: #df5646;
+}
+@media only screen and (max-width: 500px) {
+  .items {
+    margin: 50px auto;
+    max-width: 380px;
+  }
+}
+
+@media only screen and (min-width: 501px) {
+  .myProjectItems {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 50px;
+  }
+  .items {
+    width: 300px;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .items{
+    width: 280px;
+  }
+}
