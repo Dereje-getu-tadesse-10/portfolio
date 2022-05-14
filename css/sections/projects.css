@@ -3,6 +3,7 @@
 }
 .items {
   padding: 10px;
+  height: 100%;
   border-radius: 5px;
   background-color: #32324c;
 
@@ -38,6 +39,11 @@
     margin: 50px auto;
     max-width: 380px;
   }
+}
+
+.languagesListe li{
+  font-weight: bold;
+  color: #ffa296;
 }
 
 @media only screen and (min-width: 501px) {

@@ -1,38 +1,25 @@
 [
     {
-      "img":"https://images.pexels.com/photos/11431628/pexels-photo-11431628.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260",
-      "nom": "Projet github",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo aliquam, architecto praesentium accusamus provident voluptas tenetur cupiditate commodi exercitationem ea! ",
+      "img":"https://derejeg.promo-106.codeur.online/assetsportfolio/widget.webp",
+      "alt": "Image du projet widget",
+      "nom": "Labs wigdet",
+      "description": "Le site widget regroupe plusieurs widgets météo, calculette, générateur de mot de passe et une mini todolist.",
       "languages": [
         "HTMLS",
         "CSS",
-        "JS",
-        "AJAX FETCH"
+        "JS"
       ],
       "lien":"https://derejeg.promo-106.codeur.online/assets/pexels-photo-11189048.jpeg"
     },
     {
-      "img":"https://images.pexels.com/photos/11431628/pexels-photo-11431628.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260",
-      "nom": "Projet ",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo aliquam, architecto praesentium accusamus provident voluptas tenetur cupiditate commodi exercitationem ea! ",
+      "img":"https://derejeg.promo-106.codeur.online/assetsportfolio/boutons_neo.webp",
+      "alt": "Image du projet boutons néon",
+      "nom": "Boutons neon",
+      "description": "Le labs boutons néon a pour but d'utiliser seulement le css pour les animations.",
       "languages": [
         "HTMLS",
-        "CSS",
-        "JS",
-        "AJAX FETCH"
+        "CSS"
       ],
-      "lien":"https://derejeg.promo-106.codeur.online/assets/pexels-photo-11189048.jpeg"
-    },
-    {
-      "img":"https://images.pexels.com/photos/11431628/pexels-photo-11431628.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260",
-      "nom": "Projet ",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo aliquam, architecto praesentium accusamus provident voluptas tenetur cupiditate commodi exercitationem ea! ",
-      "languages": [
-        "HTMLS",
-        "CSS",
-        "JS",
-        "AJAX FETCH"
-      ],
-      "lien":"https://derejeg.promo-106.codeur.online/assets/pexels-photo-11189048.jpeg"
+      "lien":""
     }
   ]

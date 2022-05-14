@@ -1,38 +1,44 @@
 [
   {
-    "img":"https://images.pexels.com/photos/11431628/pexels-photo-11431628.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260",
+    "img":"https://derejeg.promo-106.codeur.online/assetsportfolio/appgithub.webp",
+    "alt": "Image du projet app github",
     "nom": "Projet github",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo aliquam, architecto praesentium accusamus provident voluptas tenetur cupiditate commodi exercitationem ea! ",
+    "description": "Le but de ce projet est d'utiliser l'api de gitthub et d'avoir des informations sur l'utilisateur recherché dans la barre de recherche. Date du projet 06/02/22",
     "languages": [
-      "HTMLS",
+      "HTML",
       "CSS",
       "JS",
       "AJAX FETCH"
     ],
-    "lien":"https://images.pexels.com/photos/11431628/pexels-photo-11431628.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
+    "lien":"https://github.com/Dereje-getu-tadesse-10/app-git/tree/main/app_github"
   },
   {
-    "img":"https://images.pexels.com/photos/11431628/pexels-photo-11431628.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260",
-    "nom": "Projet",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo aliquam, architecto praesentium accusamus provident voluptas tenetur cupiditate commodi exercitationem ea! ",
+    "img":"https://derejeg.promo-106.codeur.online/assetsportfolio/formulaire.webp",
+    "alt": "Image du projet formulaire de contact",
+    "nom": "Projet Formulaire",
+    "description": "Le projet formulaire a pour but de nous initier au php et a l'AJAX pour que l'envoi de mail se fasse sans le rechargement de page. Date du projet 14/02/22.",
     "languages": [
-      "HTMLS",
+      "HTML",
       "CSS",
       "JS",
-      "AJAX FETCH"
+      "AJAX FETCH",
+      "PHP"
     ],
-    "lien":"https://derejeg.promo-106.codeur.online/assets/pexels-photo-11189048.jpeg"
+    "lien":"https://github.com/Dereje-getu-tadesse-10/form"
   },
   {
-    "img":"https://images.pexels.com/photos/11431628/pexels-photo-11431628.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260",
-    "nom": "Projet ",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo aliquam, architecto praesentium accusamus provident voluptas tenetur cupiditate commodi exercitationem ea! ",
+    "img":"https://derejeg.promo-106.codeur.online/assetsportfolio/todolist.webp",
+    "alt": "Image du projet todolist",
+    "nom": "Todo-list",
+    "description": "Une todolist fonctionnelle avec une BDD qui contient toutes les taches en cours à faire et terminer ",
     "languages": [
-      "HTMLS",
-      "CSS",
+      "HTML",
+      "SCSS",
       "JS",
-      "AJAX FETCH"
+      "AJAX FETCH",
+      "PHP",
+      "SQL"
     ],
-    "lien":"https://derejeg.promo-106.codeur.online/assets/pexels-photo-11189048.jpeg"
+    "lien":"https://github.com/SamirZemouri/Projet-restaurant"
   }
 ]

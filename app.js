@@ -30,8 +30,9 @@ form.addEventListener("submit", (e) => {
         errMail.textContent = "";
         errSujet.textContent = "";
         errMessage.textContent = "";
-        divErr.style.backgroundColor = "green";
-        merci.textContent = "Mecri !";
+        divErr.style.backgroundColor = "#32CD32";
+        merci.textContent = "Mecri !"
+        console.log('%cMerci votre message a bien été envoyer 🥳','background-color:#32CD32; padding:10px; color:white; border-radius:.5em');
       } else {
         divErr.style.backgroundColor = "";
         merci.textContent = "";
