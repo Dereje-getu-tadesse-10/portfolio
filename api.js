@@ -42,7 +42,6 @@ function getPublications(name) {
             scroll.to('.card', {
               scrollTrigger: {
                 trigger: '.blogContainer',
-                markers: true,
                 start: 'top 50%',
                 onEnter: () => {
                   scroll.to('.blogContainer',{
