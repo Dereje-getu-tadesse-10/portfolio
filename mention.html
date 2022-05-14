@@ -27,9 +27,58 @@
     />
     <meta name="theme-color" content="#1a1a40" />
     <link rel="stylesheet" href="./css/sections/_mention/style.css" />
+
     <title>MENTIONS LÉGALES</title>
   </head>
   <body>
+  <div class="cursor"></div>
+  <div class="cursor2"></div>
+
+  <header>
+    <svg
+            id="logo"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 286.08 329.27"
+    >
+      <defs>
+        <style>
+          .cls-1 {
+            fill: #df5645;
+          }
+          .cls-2 {
+            fill: #f4a49e;
+          }
+          .cls-3 {
+            fill: #fbf1e6;
+          }
+        </style>
+      </defs>
+      <g id="Calque_2" data-name="Calque 2">
+        <g id="Layer_1" data-name="Layer 1">
+          <path
+                  class="cls-1"
+                  d="M208.29,156.58c0,.77,0,1.52,0,2.3,0,77.28-43.2,113.76-109.44,113.27-2.49,0-5,0-7.57,0L34.92,327.82c13.57.88,29.51,1.45,48.12,1.45,63.36,0,115.2-13.43,149.28-41.75,31.2-26.4,53.76-69.12,53.76-131,0-25.06-4.07-46.79-11.47-65.4Z"
+          />
+          <polygon
+                  class="cls-2"
+                  points="0 313.1 0 157.59 251.47 53.48 0 313.1"
+          />
+          <path
+                  class="cls-3"
+                  d="M98.88,0c-37,0-72,2.4-98.88,6.72V119.16L213.07,22.78C184.67,7.34,149,0,98.88,0Z"
+          />
+        </g>
+      </g>
+    </svg>
+    <nav class="navAnimation">
+      <ul class="navUl">
+        <li><a class="link" href="#about">A propos</a></li>
+        <li><a class="link" href="#projects">Projets</a></li>
+        <li><a class="link" href="#form">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="openMenu">Menu</button>
+  </header>
     <main>
       <section class="containerMentions center">
         <h1 class="titleMentions">MENTIONS LÉGALES</h1>
@@ -46,8 +95,7 @@
         <p class="mt-p">
           Le présent site, accessible à l’URL
           https://derejeg.promo-106.codeur.online/portfolio/ (le « Site »), est
-          édité par : DEREJE GETU TADESSE, résidant Onlineformapro, 101 Rue de
-          Vesoul, 25000 Besançon, de nationalité Éthiopienne (Éthiopie), né(e)
+          édité par : DEREJE GETU TADESSE, résidant à Besançon, de nationalité Éthiopienne (Éthiopie), né(e)
           le 16/04/2001,
         </p>
       </section>
@@ -67,7 +115,8 @@
       </section>
       <section class="nous center">
         <h1 class="titleMentions">Nous contacter</h1>
-        <p class="mt-p">Par téléphone : +33661107720</p>
+        <a class="mt-p">Par téléphone : <a id="phoneMe" href="tel:+33661107720">
+                +33661107720</a>
         <p>
           Par email :
           <a id="mailMe" href="mailto:getutadessedereje@icloud.com">
@@ -124,5 +173,8 @@
 
       <p>&copy; Dereje Getu Tadesse <span class="currentYear"></span></p>
     </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
+  <script src="anim.js"></script>
   </body>
 </html>
