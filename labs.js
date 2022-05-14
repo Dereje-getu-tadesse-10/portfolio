@@ -8,6 +8,7 @@ fetch("./projects/labs/labs.json")
       const me = document.getElementsByClassName("myProjectItems")[1];
       const projets = document.createElement("div");
       projets.classList.add("items");
+      projets.classList.add("labosItems");
       projets.classList.add("bckColor");
       const img = document.createElement("img");
       img.classList.add("ItemsImages");
@@ -43,5 +44,24 @@ fetch("./projects/labs/labs.json")
       projets.appendChild(button);
 
       me.appendChild(projets);
+
+      function animationProject(){
+        const scroll = gsap.timeline();
+        scroll.to('.labsItems', {
+          scrollTrigger: {
+            trigger: '.labosItems',
+            start: 'top 50%',
+            onEnter: () => {
+              scroll.to('.labosItems', {
+                autoAlpha: 1,
+                stagger:.3,
+                duration:.2,
+              })
+            }
+          }
+        })
+      }
+      animationProject();
+
     });
   });

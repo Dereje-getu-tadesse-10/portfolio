@@ -2,6 +2,49 @@ const burger = document.querySelector(".openMenu");
 const nav = document.querySelector(".navAnimation");
 const links = document.querySelectorAll(".link");
 
+//anime home page gsap
+const logoHeader = document.querySelector("#logo");
+const buttonMenu = document.querySelector(".openMenu");
+const titleHomePage = document.querySelector(".titleHome");
+const spanHomepage = document.querySelector('.iam');
+const miniPresentation = document.querySelector(".welcome");
+
+window.addEventListener('load', ()=>{
+  loadAnimation();
+});
+
+// function animation
+function loadAnimation(){
+  let tl;
+  tl = gsap.timeline();
+  tl.to(titleHomePage,{
+    y:0,
+    autoAlpha:1,
+    delay:0.2
+  })
+  tl.to(logoHeader,{
+    x:0,
+    autoAlpha:1,
+    delay:0.2
+  })
+  tl.to(buttonMenu,{
+    x:0,
+    autoAlpha:1,
+    delay:0.2
+  })
+  tl.to(spanHomepage,{
+    y:0,
+    autoAlpha:1,
+    delay:0.2
+  })
+  tl.to(miniPresentation,{
+    y:0,
+    autoAlpha:1,
+    delay:0.2
+  })
+}
+
+
 burger.addEventListener("click", () => {
   nav.classList.toggle("open");
   links.forEach((element) => {
@@ -13,35 +56,35 @@ burger.addEventListener("click", () => {
   });
 });
 
+// get current year span html
 const spanYear = document.querySelector(".currentYear");
+let currentYear = new Date().getFullYear()
+spanYear.textContent = currentYear;
 
-spanYear.textContent = new Date().getFullYear();
-
-// UPDATE: I was able to get this working again... Enjoy!
-
-var cursor = document.querySelector(".cursor");
-var cursorinner = document.querySelector(".cursor2");
-var a = document.querySelectorAll("a");
+// Cursor
+let cursor = document.querySelector(".cursor");
+let cursorinner = document.querySelector(".cursor2");
+let a = document.querySelectorAll("a");
 
 document.addEventListener("mousemove", function (e) {
-  var x = e.clientX;
-  var y = e.clientY;
+  let x = e.clientX;
+  let y = e.clientY;
   cursor.style.transform = `translate3d(calc(${e.clientX}px - 50%), calc(${e.clientY}px - 50%), 0)`;
 });
 
 document.addEventListener("mousemove", function (e) {
-  var x = e.clientX;
-  var y = e.clientY;
+  let x = e.clientX;
+  let y = e.clientY;
   cursorinner.style.left = x + "px";
   cursorinner.style.top = y + "px";
 });
 
-document.addEventListener("mousedown", function () {
+document.addEventListener("mousedown", () => {
   cursor.classList.add("click");
   cursorinner.classList.add("cursorinnerhover");
 });
 
-document.addEventListener("mouseup", function () {
+document.addEventListener("mouseup", () => {
   cursor.classList.remove("click");
   cursorinner.classList.remove("cursorinnerhover");
 });
@@ -54,3 +97,8 @@ a.forEach((item) => {
     cursor.classList.remove("hover");
   });
 });
+
+//end cursor
+
+// home page
+
