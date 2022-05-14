@@ -5,6 +5,17 @@
   padding: 10px;
   border-radius: 5px;
   background-color: #32324c;
+
+}
+
+.projectItems{
+  opacity: 0;
+  visibility: hidden;
+}
+
+.labosItems{
+  opacity: 0;
+  visibility: hidden;
 }
 
 .items .ItemsImages {
