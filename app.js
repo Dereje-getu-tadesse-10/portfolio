@@ -4,6 +4,7 @@ const email = document.querySelector(".email");
 const message = document.querySelector(".text");
 
 form.addEventListener("submit", (e) => {
+  e.preventDefault();
   let valueSujet = sujet.value;
   let valueEmail = email.value;
   let valueMessage = message.value;
@@ -13,31 +14,8 @@ form.addEventListener("submit", (e) => {
   const errSujet = document.querySelector(".sujetError");
   const errMessage = document.querySelector(".messageError");
   const merci = document.querySelector(".merci");
-  e.preventDefault();
+
   let url = "./form.php";
-  const ct = new FormData(form);
-  fetch(url, {
-    method: "POST",
-    body: ct,
-  })
-    .then((response) => {
-      return response.json();
-    })
-    .then((data) => {
-      console.log(data.validation);
-      if (data.validation) {
-        form.reset();
-        errMail.textContent = "";
-        errSujet.textContent = "";
-        errMessage.textContent = "";
-        divErr.style.backgroundColor = "#32CD32";
-        merci.textContent = "Mecri !"
-        console.log('%cMerci votre message a bien été envoyer 🥳','background-color:#32CD32; padding:10px; color:white; border-radius:.5em');
-      } else {
-        divErr.style.backgroundColor = "";
-        merci.textContent = "";
-      }
-    });
 
   if (valueEmail == "") {
     divErr.style.visibility = "visible";
@@ -60,6 +38,33 @@ form.addEventListener("submit", (e) => {
   } else {
     errMessage.textContent = "";
   }
+  const ct = new FormData(form);
+  fetch(url, {
+    method: "POST",
+    body: ct,
+  })
+    .then((response) => {
+      return response.json();
+    })
+    .then((data) => {
+      console.log(data.validation);
+      if (data.validation) {
+        form.reset();
+        errMail.textContent = "";
+        errSujet.textContent = "";
+        errMessage.textContent = "";
+        divErr.style.backgroundColor = "#32CD32";
+        divErr.style.visibility = "visible";
+        merci.textContent = "Mecri !";
+        console.log(
+          "%cMerci votre message a bien été envoyer 🥳",
+          "background-color:#32CD32; padding:10px; color:white; border-radius:.5em"
+        );
+      } else {
+        divErr.style.backgroundColor = "";
+        merci.textContent = "";
+      }
+    });
 });
 
 function regExMail(email) {
