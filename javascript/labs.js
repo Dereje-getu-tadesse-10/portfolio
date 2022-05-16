@@ -1,3 +1,5 @@
+import { animationLabs } from "./scroll.js";
+
 fetch("./projects/labs/labs.json")
   .then((res) => {
     return res.json();
@@ -46,23 +48,7 @@ fetch("./projects/labs/labs.json")
 
       me.appendChild(projets);
 
-      function animationProject(){
-        const scroll = gsap.timeline();
-        scroll.to('.labsItems', {
-          scrollTrigger: {
-            trigger: '.labosItems',
-            start: 'top 50%',
-            onEnter: () => {
-              scroll.to('.labosItems', {
-                autoAlpha: 1,
-                stagger:.3,
-                duration:.2,
-              })
-            }
-          }
-        })
-      }
-      animationProject();
+      animationLabs();
 
     });
   });

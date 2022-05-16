@@ -1,0 +1,6 @@
+@media only screen and (max-width: 900px) {
+    .cursor,
+    .cursor2{
+        display: none;
+    }
+}

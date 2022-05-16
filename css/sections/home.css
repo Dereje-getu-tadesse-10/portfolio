@@ -1,6 +1,6 @@
 header {
   position: fixed;
-  top: 0;
+  top: 0px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -16,6 +16,7 @@ header {
 /* Logo width */
 #logo {
   width: 30px;
+  margin-top: 20px;
   z-index: 50;
   transform: translateX(-30px) ;
   opacity: 0;
@@ -25,14 +26,15 @@ header {
 /* Menu button */
 
 .openMenu {
-  font-size: 1.1rem;
   height: 40px;
   width: 60px;
+  margin-top: 20px;
   border: none;
   background-color: #df5646;
   color: #fff;
   border-radius: 5px;
   z-index: 50;
+  font-size: 1.1rem;
   transform: translateX(30px) ;
   opacity: 0;
   visibility: hidden;
@@ -48,7 +50,7 @@ header {
 nav {
   position: absolute;
   left: 0;
-  top: 0;
+  top: 20px;
   transform:  translateY(100%);
   transition: all .3s ease-in-out;
   width: 100%;

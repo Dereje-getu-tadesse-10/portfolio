@@ -1,4 +1,4 @@
-
+import { animationProject } from "./scroll.js";
 
 
 fetch("./projects/projets.json")
@@ -46,23 +46,6 @@ fetch("./projects/projets.json")
       projets.appendChild(ul);
       projets.appendChild(button);
       me.appendChild(projets);
-
-      function animationProject(){
-        const scroll = gsap.timeline();
-        scroll.to('.myProjectItems', {
-          scrollTrigger: {
-            trigger: '.projectItems',
-            start: 'top 60%',
-            onEnter: () => {
-              scroll.to('.projectItems', {
-                autoAlpha: 1,
-                stagger:.3,
-                duration:.3,
-              })
-            }
-          }
-        })
-      }
       animationProject();
     });
   });

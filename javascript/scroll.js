@@ -18,4 +18,40 @@ scroll.to('#poulet', {
     }
 })
 
+function animationProject(){
+    const scroll = gsap.timeline();
+    scroll.to('.myProjectItems', {
+        scrollTrigger: {
+            trigger: '.projectItems',
+            start: 'top 60%',
+            onEnter: () => {
+                scroll.to('.projectItems', {
+                    autoAlpha: 1,
+                    stagger:.3,
+                    duration:.3,
+                })
+            }
+        }
+    })
+}
+
+function animationLabs(){
+    const scroll = gsap.timeline();
+    scroll.to('.labsItems', {
+        scrollTrigger: {
+            trigger: '.labosItems',
+            start: 'top 50%',
+            onEnter: () => {
+                scroll.to('.labosItems', {
+                    autoAlpha: 1,
+                    stagger:.3,
+                    duration:.2,
+                })
+            }
+        }
+    })
+}
+
+export { animationProject, animationLabs };
+
 

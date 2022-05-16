@@ -5,6 +5,7 @@
 @import url("sections/blog.css");
 @import url("sections/form.css");
 @import url("sections/footer.css");
+@import url("sections/cursor-responsive.css");
 * {
   margin: 0;
   padding: 0;
@@ -32,9 +33,6 @@ main {
   font-weight: bold;
 }
 
-/* #mailMe{
-  color:#f4a49e !important;
-} */
 
 .cursor {
   width: 50px;

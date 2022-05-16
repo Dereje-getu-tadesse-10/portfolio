@@ -55,7 +55,7 @@
 
 @media only screen and (max-width: 500px) {
   .illustration_pagraphe{
-   height:108%;
+   height:100%;
   }
   #projects{
     margin-top: 80px;
@@ -63,7 +63,7 @@
 
   .paragraphe {
     margin-top: -90px;
-    /* height: 40%; */
+    height: 50%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -83,6 +83,8 @@
   }
 }
 
+
+
 @media only screen and (min-width: 1000px) {
   .illustration {
     margin-top: -180px;
@@ -97,6 +99,7 @@
     align-items: center;
   }
   .paragraphe {
+    height: 45%;
     width: 50%;
     font-size: 1.11rem;
   }
