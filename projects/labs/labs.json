@@ -9,17 +9,18 @@
         "CSS",
         "JS"
       ],
-      "lien":"https://derejeg.promo-106.codeur.online/assets/pexels-photo-11189048.jpeg"
+      "lien":"https://github.com/Dereje-getu-tadesse-10/widget/blob/main/README.md"
     },
     {
-      "img":"https://derejeg.promo-106.codeur.online/assetsportfolio/boutons_neo.webp",
-      "alt": "Image du projet boutons néon",
-      "nom": "Boutons neon",
-      "description": "Le labs boutons néon a pour but d'utiliser seulement le css pour les animations.",
+      "img":"https://derejeg.promo-106.codeur.online/assetsportfolio/advice_gen.webp",
+      "alt": "Image projet Gérérateur de conseils",
+      "nom": "Advice Generator",
+      "description": "Intégration d'une maquette et utilisation de l'api adviceslip pour générer des conseils aléatoirement.",
       "languages": [
         "HTMLS",
-        "CSS"
+        "CSS",
+        "JavaScript"
       ],
-      "lien":""
+      "lien":"https://github.com/Dereje-getu-tadesse-10/challenge-Advice-generator-app"
     }
   ]

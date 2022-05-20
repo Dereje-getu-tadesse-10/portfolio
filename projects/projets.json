@@ -27,18 +27,16 @@
     "lien":"https://github.com/Dereje-getu-tadesse-10/form"
   },
   {
-    "img":"https://derejeg.promo-106.codeur.online/assetsportfolio/todolist.webp",
-    "alt": "Image du projet todolist",
-    "nom": "Todo-list",
-    "description": "Une todolist fonctionnelle avec une BDD qui contient toutes les taches en cours à faire et terminer ",
+    "img":"https://derejeg.promo-106.codeur.online/assetsportfolio/marvel-api.webp",
+    "alt": "projet avec l'Api de marvel",
+    "nom": "Marvel",
+    "description": "Pour ce projet, on a travaillé en groupe de 4 pour la création d'un site web sur des comics Marvel. Nous avons donc choisis d'intégrer une collection de 6 comics des 4 Fantastiques.",
     "languages": [
       "HTML",
-      "SCSS",
-      "JS",
-      "AJAX FETCH",
-      "PHP",
-      "SQL"
+      "CSS",
+      "JAVASCRIPT",
+      "TAILWIND CSS"
     ],
-    "lien":"https://github.com/SamirZemouri/Projet-restaurant"
+    "lien":"https://github.com/Dereje-getu-tadesse-10/marvel-api"
   }
 ]

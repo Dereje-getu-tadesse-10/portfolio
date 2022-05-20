@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://derejeg.promo-106.codeur.online/portfolio/sitemap_robots/sitemap.xml

@@ -17,7 +17,7 @@ form.addEventListener("submit", (e) => {
 
   let url = "./form.php";
 
-  if (valueEmail == "") {
+  if (valueEmail === "") {
     divErr.style.visibility = "visible";
     errMail.textContent = "Email vide";
   } else if (!regExMail(valueEmail)) {
@@ -26,13 +26,13 @@ form.addEventListener("submit", (e) => {
   } else {
     errMail.textContent = "";
   }
-  if (valueSujet == "") {
+  if (valueSujet === "") {
     divErr.style.visibility = "visible";
     errSujet.textContent = "sujet vide";
   } else {
     errSujet.textContent = "";
   }
-  if (valueMessage == "") {
+  if (valueMessage === "") {
     divErr.style.visibility = "visible";
     errMessage.textContent = "Message vide";
   } else {
