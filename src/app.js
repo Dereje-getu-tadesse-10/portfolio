@@ -47,7 +47,7 @@ form.addEventListener("submit", (e) => {
       return response.json();
     })
     .then((data) => {
-      console.log(data.validation);
+      // console.log(data.validation);
       if (data.validation) {
         form.reset();
         errMail.textContent = "";
@@ -74,5 +74,3 @@ function regExMail(email) {
   email.match(regEx) ? (isValid = 1) : (isValid = 0);
   return isValid;
 }
-
-console.log('coucou');

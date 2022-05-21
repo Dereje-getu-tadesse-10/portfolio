@@ -10,6 +10,8 @@ let config = {
         filename: "./distAnim.js"
     }
 }
+
+
 // projet json fecth
 let configB = {
     mode: 'development',
