@@ -12,7 +12,6 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
-  /* cursor:none; */
 }
 
 html,
@@ -21,17 +20,16 @@ body {
 }
 
 body::-webkit-scrollbar {
-  width: 12px; /* width of the entire scrollbar */
+  width: 12px;
 }
 
 body::-webkit-scrollbar-track {
-  background: #26264f; /* color of the tracking area */
+  background: #26264f;
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #df5646;/* color of the scroll thumb */
-  border-radius: 20px; /* roundness of the scroll thumb */
-  /* border: 3px solid orange; creates padding around scroll thumb */
+  background-color: #df5646;
+  border-radius: 20px;
 }
 
 
