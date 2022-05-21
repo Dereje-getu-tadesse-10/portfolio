@@ -1,0 +1,28 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "![Build with](https://forthebadge.com/images/badges/built-with-love.svg)  # Portfolio",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dereje-getu-tadesse-10/portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dereje-getu-tadesse-10/portfolio/issues"
+  },
+  "homepage": "https://github.com/Dereje-getu-tadesse-10/portfolio#readme",
+  "devDependencies": {
+    "file-loader": "^6.2.0",
+    "sass": "^1.52.1",
+    "sass-loader": "^13.0.0",
+    "webpack": "^5.72.1",
+    "webpack-cli": "^4.9.2"
+  }
+}
