@@ -22,5 +22,17 @@
         "JavaScript"
       ],
       "lien":"https://github.com/Dereje-getu-tadesse-10/challenge-Advice-generator-app"
+    },
+    {
+      "img":"https://derejeg.promo-106.codeur.online/assetsportfolio/projet-password.webp",
+      "alt": "Image mini projet générateur de mot passe",
+      "nom": "Password Generator",
+      "description": "Intégration d'une maquette et ajout fonctionnalité pour que le générateur puisse générer un mot de passe aléatoirement parmi ces 5 propositions le choix de la taille du mot de passe et des lettres minuscules, majuscule des chiffres et des symboles.",
+      "languages": [
+        "HTMLS",
+        "SCSS",
+        "JavaScript"
+      ],
+      "lien":"https://github.com/Dereje-getu-tadesse-10/generateur-mot-de-passe"
     }
   ]

@@ -9,7 +9,7 @@ function getPublications(name) {
       .then((res) => res.json())
       .then((data) => {
         let blog = data.dataMedium;
-
+        console.log(blog);
         blog.forEach((element) => {
           const mainContainer = document.createElement("div");
           mainContainer.classList.add("blogContainer");

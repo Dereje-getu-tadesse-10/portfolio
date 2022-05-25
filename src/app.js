@@ -47,7 +47,7 @@ form.addEventListener("submit", (e) => {
       return response.json();
     })
     .then((data) => {
-      console.log(data.validation);
+      // console.log(data.validation);
       if (data.validation) {
         form.reset();
         errMail.textContent = "";
